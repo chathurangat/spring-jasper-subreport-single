@@ -9,7 +9,7 @@
 	
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>
-		<url-pattern>/krams/*</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<listener>
