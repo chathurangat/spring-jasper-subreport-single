@@ -79,8 +79,8 @@ public class MainController {
 
         // Both datasources use the same datasource
         // You can provide different datasources
-        parameterMap.put("datasource", datasource);
-        parameterMap.put("JasperCustomSubReportDatasource", datasource);
+        parameterMap.put("JasperMainReportDataSource", datasource);
+        parameterMap.put("JasperCustomSubReportDataSource", datasource);
 
         // xlsReport is the View of our application
         // This is declared inside the /WEB-INF/jasper-views.xml
@@ -125,8 +125,8 @@ public class MainController {
 
         // Both datasources use the same datasource
         // You can provide different datasources
-        parameterMap.put("datasource", datasource);
-        parameterMap.put("JasperCustomSubReportDatasource", datasource);
+        parameterMap.put("JasperMainReportDataSource", datasource);
+        parameterMap.put("JasperCustomSubReportDataSource", datasource);
 
         // pdfReport is the View of our application
         // This is declared inside the /WEB-INF/jasper-views.xml

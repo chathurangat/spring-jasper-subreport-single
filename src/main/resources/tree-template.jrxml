@@ -15,7 +15,7 @@
 		</conditionalStyle>
 	</style>
 	<parameter name="JasperCustomSubReportLocation" class="net.sf.jasperreports.engine.JasperReport"/>
-	<parameter name="JasperCustomSubReportDatasource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperCustomSubReportDataSource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
 	<field name="id" class="java.lang.Long"/>
 	<field name="name" class="java.lang.String"/>
 	<field name="price" class="java.lang.Double"/>
@@ -109,7 +109,7 @@
 				<subreportParameter name="MANUFACTURER">
 					<subreportParameterExpression><![CDATA[$F{manufacturer}]]></subreportParameterExpression>
 				</subreportParameter>
-				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource ($P{JasperCustomSubReportDatasource}.getData())]]></dataSourceExpression>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource ($P{JasperCustomSubReportDataSource}.getData())]]></dataSourceExpression>
 				<subreportExpression class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{JasperCustomSubReportLocation}]]></subreportExpression>
 			</subreport>
 		</band>
